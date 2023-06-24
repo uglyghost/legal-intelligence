@@ -4,11 +4,11 @@
 法智 Langchain 是一个由法律大模型团队开发的项目，旨在通过深度学习模型提供法律相关的信息和服务。
 
 ### 项目概述
-- data
+- data  # 部分数据文件 (csv文件需要导入本地 mysql 数据库)
   - 组合文件.pdf                   # 关于法律事务所的 PDF 文件
   - graduate_system.csv           # 研究生院规则制度表
   - graduate_teacher.csv          # 西南财大老师信息表
-- Langchain_code
+- Langchain_code  # 项目核心代码
   - db                            # chromeDB 持久化向量数据库
     - ...  
   - langchain_DB.py               # 使用 langchain 连接不同数据库的代码
@@ -16,10 +16,11 @@
   - server.py                     # 主函数，可视化界面以及主要功能
   - langchain_legal_to_vec.py     # 读取 "../data/组合文件.pdf" 文件并且保存到 "Langchain_code/db" 的向量数据库中
   - langchain_legal.py            # 测试 langchain_legal_to_vec.py" 生成的向量数据库是否可用
-- Tutorial
+- Tutorial # 相关学习教程
   - [LangChain](https://www.langchain.asia/getting_started/getting_started)  🦜️🔗 中文网 
   - Clash 上网详见文件 `./Tutorial/科学上网工具Clash.pdf`
   - [Git](https://www.liaoxuefeng.com/wiki/896043488029600) 教程
+- study workspace    # 同学们将学习后写的代码上传到这里
 
 ### 项目准备
 
