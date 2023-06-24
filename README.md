@@ -18,7 +18,8 @@
   - langchain_legal.py            # 测试 langchain_legal_to_vec.py" 生成的向量数据库是否可用
 - Tutorial
   - [LangChain](https://www.langchain.asia/getting_started/getting_started)  🦜️🔗 中文网 
-  - Clash 上网详见文件`./Tutorial/科学上网工具Clash.pdf`
+  - Clash 上网详见文件 `./Tutorial/科学上网工具Clash.pdf`
+  - [Git](https://www.liaoxuefeng.com/wiki/896043488029600) 教程
 
 ### 项目准备
 
