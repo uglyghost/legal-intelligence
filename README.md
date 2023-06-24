@@ -1,33 +1,60 @@
-# 法智
+# 法智langchain模型
 
-#### 介绍
+### 介绍
 法智_法律大模型团队的学习仓库
 
-#### 软件架构
-软件架构说明
+### 项目概述
+- data
+  - 组合文件.pdf                   # 关于法律事务所的 PDF 文件
+  - graduate_system.csv           # 研究生院规则制度表
+  - graduate_teacher.csv          # 西南财大老师信息表
+- Langchain_code
+  - db                            # chromeDB 持久化向量数据库
+    - ...  
+  - langchain_DB.py               # 使用 langchain 连接不同数据库的代码
+  - langchain_Google.pt           # 使用Google serpapi 调用google搜索查找结果
+  - server.py                     # 主函数，可视化界面以及主要功能
+  - langchain_legal_to_vec.py     # 读取 "../data/组合文件.pdf" 文件并且保存到 "Langchain_code/db" 的向量数据库中
+  - langchain_legal.py            # 测试 langchain_legal_to_vec.py" 生成的向量数据库是否可用
+- Tutorial
+  - 
 
+### 项目准备
 
-#### 安装教程
+1.  进入 Langchain_DB 文件夹下，运行：
+```bash 
+pip install -r requirements.txt
+```
+2.  将 `data` 目录下的 `组合文件.pdf` 持久化为向量数据
+```bash 
+# 持久化 组合文件.pdf 为向量数据
+python langchain_legal_to_vec.py
+```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+```bash 
+# 进行测试
+python langchain_legal.py
+```
+![img.png](imgs/langchain_legal.png)
+3.  配置 xxx.csv 文件到 mysql 数据库
 
-#### 使用说明
+### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  运行项目
+```bash 
+python server.py
+```
+![img.png](imgs/server1.png)
+![img.png](imgs/server.png)
 
-#### 参与贡献
+### 参与贡献
 
 1.  Fork 本仓库
 2.  新建 Feat_xxx 分支
 3.  提交代码
 4.  新建 Pull Request
 
-
-#### 特技
+### 特技
 
 1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
 2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)

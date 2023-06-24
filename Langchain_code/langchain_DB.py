@@ -1,6 +1,12 @@
 from langchain import SQLDatabase, SQLDatabaseChain
 
+'''
+llm: 大语言模型类
+input: 用户提的问题
+option: 筛选项，用于区分连接不同数据库
 
+return_text: 返回从数据库中找到的内容
+'''
 def get_database_result(llm, input, option):
     if option == '中国专利数据库':
         db = SQLDatabase.from_uri("mysql+pymysql://root:12345678@127.0.0.1/ChinaPatent")

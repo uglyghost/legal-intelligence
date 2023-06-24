@@ -6,12 +6,12 @@ from langchain.docstore.document import Document
 import re
 
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 
 # 加载PDF文件
 def load_pdf(pdf_file):
-    pdf_file = open('./pdf/组合文件.pdf', 'rb')
+    pdf_file = open('../data/组合文件.pdf', 'rb')
     pdf_reader = PyPDF2.PdfReader(pdf_file)
 
     text = ''
@@ -74,8 +74,8 @@ def persist_embedding(documents):
 if __name__ == "__main__":
     os.environ["http_proxy"] = "http://127.0.0.1:1080"
     os.environ["https_proxy"] = "http://127.0.0.1:1080"
-    # embdding并且持久化
-    pdf_name = "./pdf/组合文件.pdf"
+    # embdding 并且持久化
+    pdf_name = "../data/组合文件.pdf"
     content = load_pdf(pdf_name)
     documents = split_paragraph(content, pdf_name)
     persist_embedding(documents)
