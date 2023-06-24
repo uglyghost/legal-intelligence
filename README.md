@@ -17,7 +17,8 @@
   - langchain_legal_to_vec.py     # 读取 "../data/组合文件.pdf" 文件并且保存到 "Langchain_code/db" 的向量数据库中
   - langchain_legal.py            # 测试 langchain_legal_to_vec.py" 生成的向量数据库是否可用
 - Tutorial
-  - 
+  - [LangChain](https://www.langchain.asia/getting_started/getting_started)  🦜️🔗 中文网 
+  - Clash 上网详见文件`./Tutorial/科学上网工具Clash.pdf`
 
 ### 项目准备
 
