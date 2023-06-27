@@ -11,3 +11,5 @@ prompt = PromptTemplate(
 chain = LLMChain(llm=llm, prompt=prompt)
 
 print(chain.run("colorful socks"))
+
+# result:Happy Socks Boutique
