@@ -35,3 +35,16 @@ agent = initialize_agent(tools, llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION
 
 # 运行 agent
 agent.run("今天星期几?，历史上的今天发生了哪些大事")
+
+'''
+result:
+> Entering new  chain...
+ 我需要搜索历史上的今天发生了什么大事
+Action: Search
+Action Input: "历史上的今天发生了什么大事"
+Observation: 6月2日 汪达尔-阿兰王国君主盖萨里克率领汪达尔人进入罗马，展开长达两个星期的洗劫。 意大利发明家古列尔莫·马可尼在英国获得其发明的无线电技术专利，并用于电报工作上。 意大利王国举行决定国家政体公民投票，决定废黜国王翁贝托二世并成立共和国。
+Thought: 根据搜索结果，今天是星期二
+Final Answer: 今天是星期二，历史上的今天发生了汪达尔-阿兰王国君主盖萨里克率领汪达尔人进入罗马，古列尔莫·马可尼在英国获得其发明的无线电技术专利，以及意大利王国举行决定国家政体公民投票，决定废黜国王翁贝托二世并成立共和国的大事。
+
+> Finished chain.
+'''
